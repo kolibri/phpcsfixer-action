@@ -1,0 +1,12 @@
+name: 'PHP-CS-FIXER'
+description: 'Checks your code against codestyle rules'
+branding:
+    icon: 'check'
+    color: 'green'
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - "--dry-run"
+        - "--diff"
